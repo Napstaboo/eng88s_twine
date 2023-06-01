@@ -12,10 +12,10 @@ eng88s_twine
 }
 
 
-:: Untitled Passage {"position":"625,325","size":"100,100"}
-this your new start node :3 
+:: Untitled Passage {"position":"425,100","size":"100,100"}
+if you can see this, it's working wooo :3 (this is your start node, change it to whatever u want lol)
 
-this is how [[options]] work
+[[testinggg]]
 
 [[bee movie]]
 
@@ -24,5 +24,5 @@ this is how [[options]] work
 according to all known laws of aviation
 
 
-:: options {"position":"625,450","size":"100,100"}
+:: testinggg {"position":"550,225","size":"100,100"}
 
