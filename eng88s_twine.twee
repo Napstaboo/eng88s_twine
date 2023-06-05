@@ -7,7 +7,7 @@ eng88s_twine
   "ifid": "474fe4a9-9131-4be3-96d3-4991427dec94",
   "format": "Harlowe",
   "format-version": "3.3.5",
-  "start": "Untitled Passage",
+  "start": "heartbreak hotel",
   "zoom": 1
 }
 
@@ -32,8 +32,6 @@ Anyway, I'll see you again on [[Thur--]] //
 You [[try]] to remember
 
 
-
-
 :: Paula {"position":"75,1150","size":"100,100"}
 (set: $paula to true)
 
@@ -52,10 +50,6 @@ she narrows her eyes.
 ]
 
 
-:: Taco Bell {"position":"100,0","size":"100,100"}
-
-
-
 :: Thur-- {"position":"300,1475","size":"100,100"}
 Hi there!
 
@@ -67,13 +61,6 @@ In order to have the best experience, please allow access to your camera and mic
 
 [[Allow access]]
 (text-color: blue)[~~what is going on?~~]
-
-
-:: Untitled Passage {"position":"0,0","size":"100,100"}
-if you can see this, it's working wooo :3 (this is your start node, change it to whatever u want lol)
-
-[[Taco Bell]]
-[[the begin]]
 
 
 :: a coyote {"position":"450,1375","size":"100,100"}
@@ -104,7 +91,6 @@ what are you waiting for me to say dear?...
 (live: 2s)[(stop:) it occurs to you that maybe you should [[get down]], behind something. Take cover perhaps.
 
 ]]]]
-
 
 
 :: a gentle hum {"position":"700,1600","size":"100,100"}
@@ -197,15 +183,12 @@ He leans in closer. He smells like the leftovers that get you through the day wh
 ]
 
 
-
 :: follow your heart {"position":"200,625","size":"100,100"}
 your heart takes you west down the highway where awaits [[a little diner]] that's only open on the days that don't belong to you.
 
 It's a quaint little spot with neon lights that cut through the rain. // e rtbreak hotel//. No one's replacing the broken lights. Behind the diner is a parking lot with a single van parked directly opposite the diner door. 
 
 //Welcome to ''Heartbreak Hotel'', the best and only [[coffee]] for miles around. Today's special: working through your problems and the nagging worm at the back of your throat that won't stop writhing.//
-
-
 
 
 :: get down {"position":"475,1525","size":"100,100"}
@@ -227,7 +210,6 @@ you feel [[a gentle hum]] envelope you
 You turn off your GPS. You don't need it here.
 
 [[follow your heart]]
-
 
 
 :: give up {"position":"525,450","size":"100,100"}
@@ -273,7 +255,6 @@ You don't have pockets, and if you did, they'd be very [[empty]].
 ]
 
 
-
 :: heartbreak hotel {"position":"375,300","size":"100,100"}
 It is raining. More than you have ever seen it rain before.
 
@@ -300,7 +281,6 @@ the door closes behind you and a little bell tolls. You are seated on a stool. T
 (live: 2s)[(stop:)
 "aaaand what will we be [[having]] today?"
 ]
-
 
 
 :: hope {"position":"400,825","size":"100,100"}
@@ -357,7 +337,6 @@ the sky is purple and pink and green.
 Purple like elusive blue but with a hint of [[blood]] mixed in.
 
 
-
 :: someone {"position":"75,1350","size":"100,100"}
 "It's just been so long, I can't remember who I'm waiting for"
 
@@ -376,14 +355,6 @@ you really are thinking as hard as you can but this storm isn't letting up and (
 [[drive|drove]].
 
 ]
-
-
-:: the begin {"position":"0,100","size":"100,100"}
-
-
-
-
-[[heartbreak hotel]] 
 
 
 :: the door {"position":"250,800","size":"100,100"}
@@ -409,8 +380,6 @@ You really want to go back there? After last time?
 
 :: try {"position":"750,1075","size":"100,100"}
 [[try harder]] now
-
-
 
 
 :: try harder {"position":"750,1200","size":"100,100"}
