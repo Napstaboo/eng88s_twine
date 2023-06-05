@@ -7,10 +7,47 @@ eng88s_twine
   "ifid": "474fe4a9-9131-4be3-96d3-4991427dec94",
   "format": "Harlowe",
   "format-version": "3.3.5",
-  "start": "Untitled Passage",
-  "zoom": 0.6
+  "start": "heartbreak hotel",
+  "zoom": 1
 }
 
+:: Allow access {"position":"375,1150","size":"100,100"}
+Do you allow anyone into your head? 
+
+It occurs to you that no one knows you're here.
+
+//[[Why are you here? |It's just... I feel lost]].//
+
+
+:: Dr. Patil {"position":"200,1275","size":"100,100"}
+//Dear Dr. Patil,
+
+I've been journaling. Like you recommended. I thought it was dumb at first, like, sitting down and talking to myself? But it really does help. It doesn't replace actually checkin in with you, but it's nice to be able to just... physicalize what I'm feeling and kinda take control of it, if that makes any sense. 
+
+Anyway, I'll see you again on [[Thur--]] //
+
+
+:: It's just... I feel lost {"position":"550,1100","size":"100,100"}
+You [[try]] to remember
+
+
+:: Paula {"position":"75,1150","size":"100,100"}
+(set: $paula to true)
+
+Paula isn't old. Unless you define old as mid thirties. Or maybe you define old as having lived through more than most in which case, Paula isn't old. 
+
+She turns over and looks at you. 
+
+"nasty weather outside. It's a responsible decision you made getting outta that storm"
+
+she narrows her eyes.
+
+(live: 3s)[(stop:)
+
+"I can't remember the last time I saw someone around here. I just sit here. And I wait and I wait and I [[wait]]."
+>>>>>>> anbu
+
+]
 
 :: \ read the book {"position":"850,1400","size":"100,100"}
 You open the book to the middle and strain to see the text inside. It looks like mystical runes, but upon further inspection, you see it just says "//Live Mas//" over and over.
@@ -183,47 +220,10 @@ The figure pulls out a book called "LIVE MENOS" and begins reading from it. You 
 (set: $livemas to it + (a: "''LIVE MENOS ''"))
 (set: _counter to it + 1)
 (if: _counter is 200)[(stop:)]
-:: Allow access {"position":"375,1150","size":"100,100"}
-Do you allow anyone into your head? 
-
-It occurs to you that no one knows you're here.
-
-//[[Why are you here? |It's just... I feel lost]].//
-
-
-:: Dr. Patil {"position":"200,1275","size":"100,100"}
-//Dear Dr. Patil,
-
-I've been journaling. Like you recommended. I thought it was dumb at first, like, sitting down and talking to myself? But it really does help. It doesn't replace actually checkin in with you, but it's nice to be able to just... physicalize what I'm feeling and kinda take control of it, if that makes any sense. 
-
-Anyway, I'll see you again on [[Thur--]] //
-
-
-:: It's just... I feel lost {"position":"550,1100","size":"100,100"}
-You [[try]] to remember
-
-
-
-
-:: Paula {"position":"75,1150","size":"100,100"}
-(set: $paula to true)
-
-Paula isn't old. Unless you define old as mid thirties. Or maybe you define old as having lived through more than most in which case, Paula isn't old. 
-
-She turns over and looks at you. 
-
-"nasty weather outside. It's a responsible decision you made getting outta that storm"
-
-she narrows her eyes.
-
-(live: 3s)[(stop:)
-
-"I can't remember the last time I saw someone around here. I just sit here. And I wait and I wait and I [[wait]]."
-
 ]
 
 
-:: Taco Bell {"position":"100,0","size":"100,100"}
+:: Taco Bell {"position":"1000,50","size":"100,100"}
 (if: $order is not 0)[You drive forward to the order screen.]
 (else:)[You drive up the exit to get to Taco Bell.]
 
@@ -243,27 +243,6 @@ You feel weird, like you've done this all before. You check yourself for any sig
  (if: _sec > 3)[(restart:)]]
 
 
-
-:: Thur-- {"position":"300,1475","size":"100,100"}
-Hi there!
-
-Welcome to Therapy Bot, the only therapy system you will need to get you back to being as ''productive'' as ~~you~~ would like to be. 
-
-In order to have the best experience, please allow access to your camera and microphone. 
-
-(text-color: blue)[~~Theraoy Bot is designed to complement, not replace, professional medical treatment~~]
-
-[[Allow access]]
-(text-color: blue)[~~what is going on?~~]
-
-
-:: Untitled Passage {"position":"0,0","size":"100,100"}
-if you can see this, it's working wooo :3 (this is your start node, change it to whatever u want lol)
-
-[[Taco Bell]]
-[[begin]]
-
-
 :: baja blast {"position":"850,275","size":"100,100"}
 "Will that be all?"
 
@@ -280,10 +259,6 @@ if you can see this, it's working wooo :3 (this is your start node, change it to
 (if: (visited: "book knowledge"))[The figure gives a self-satisfied smile.] They head to a bookcase and pull on a book. The bookcase opens up.
 
 [["Come forth."]]
-
-
-:: begin {"position":"0,100","size":"100,100"}
-
 
 
 :: book knowledge {"position":"1075,1650","size":"100,100"}
@@ -675,128 +650,7 @@ The worker hands you your order.
 (else:)[
 
 [[drive forward]]
-[[the begin]]
 
-
-:: a coyote {"position":"450,1375","size":"100,100"}
-what's a coyote doing all the way out here?
-
-what are you doing all the way out here?
-
-they need you back home, you know?
-
-they're waiting for you.
-
-(live:2s)[(stop:) 
-
-when are you coming home dear?
-
-(live:2s)[(stop:) 
-
-why are you out here dear?
-
-(live:2s)[(stop:) 
-
-what are you waiting for me to say dear?...
-
-(live:2s)[(stop:)
-
-**the storm** grows louder. You've never heard a storm so loud before. It's louder than everything in your head and (if: $paula is true) [Paula] (else:)[the woman sitting by the counter] who's now yelling at you.
-
-(live: 2s)[(stop:) it occurs to you that maybe you should [[get down]], behind something. Take cover perhaps.
-
-]]]]
-
-
-
-:: a gentle hum {"position":"700,1600","size":"100,100"}
-160,000 miles of road constitute the National Highway System in the US. It is the largest highway system in the world.
-
-Heartbreak Hotel was a diner on a highway that you once visited.
-
-
-:: a little diner {"position":"375,625","size":"100,100"}
-your inventory is filled with [[hope]]. Even from here, it's like the [[sky]] wraps itself around the sides of the diner and stretches around over to the front and time slows and you are getting old but not so fast anymore. 
-
-you stride forwards with all the confidence of someone who knows exactly what kind of coffee they want and stand before [[the door]]
-
-
-:: a shooting star {"position":"750,1425","size":"100,100"}
-shooting stars aren't stars at all.
-
-They're burning out, dying.
-
-They're so pretty.
-
-Make a wish before it's gone.
-
-(live: 2s)[(stop:) before everything's gone. Wiped away by...
-
-(live:2s)[(stop:)
-
-the storm grows louder. You've never heard a storm so loud before. It's louder than everything in your head and (if: $paula is true) [Paula] (else:)[the woman sitting by the counter] who's now yelling at you.
-
-(live: 2s)[(stop:) it occurs to you that maybe you should [[get down]], behind something. Take cover perhaps.
-
-]]]
-
-
-:: blood {"position":"600,700","size":"100,100"}
-//don't just sit there bleeding on my seat! This shit's **alcantara**, it's worth more than you//
-
-
-don't listen to him. It's going to be **[[okay|a little diner]]**
-
-
-:: broken hearts {"position":"600,300","size":"100,100"}
-#''Break''
-//verb//
-to shatter, to destroy, to (if: $giveup is false)[[[give up|give up]]] (else:)[give up]  to drop, to stop trying
-
-
-#''heart ''
-//unspeakable//
-the smell of fear, the mass of electricity in your inventory. It will never stop...
-
-//[[heartbreak|heartbreak hotel]]//
-
-
-:: citrus fever {"position":"550,900","size":"100,100"}
-#Citrus fever
-
-//when [[life|hope]] gives you lemons...//
-
-
-:: coffee {"position":"25,650","size":"100,100"}
-#Caffeine
-
-//substance (not really)//
-
-it [[helps |follow your heart]].
-
-
-:: drove {"position":"600,1250","size":"100,100"}
-and on your drive you saw
-
-[[a shooting star]]
-[[a coyote]]
-[[yourself|myself]]
-
-
-:: empty {"position":"200,975","size":"100,100"}
-He seems to notice your distress.
-
-"we don't take cash, or card for that matter."
-"We just need a little peak into your //heart//"
-
-(live: 1s)[(stop:)
-
-He leans in closer. He smells like the leftovers that get you through the day when you can't work up the energy to make pasta. 
-
-(live: 1s)[(stop:)
-"so tell me, [[who are you]] and [[what's on your mind?]]"]
-
-]
 
 
 :: put it back {"position":"1300,1525","size":"100,100"}
@@ -937,6 +791,138 @@ Potions bubble in beakers on the tables. A collection of massive books line the 
 
 :: StoryScript [script]
 console.log("LIVE MAS ".repeat(5))
+:: Thur-- {"position":"300,1475","size":"100,100"}
+Hi there!
+
+Welcome to Therapy Bot, the only therapy system you will need to get you back to being as ''productive'' as ~~you~~ would like to be. 
+
+In order to have the best experience, please allow access to your camera and microphone. 
+
+(text-color: blue)[~~Theraoy Bot is designed to complement, not replace, professional medical treatment~~]
+
+[[Allow access]]
+(text-color: blue)[~~what is going on?~~]
+
+
+:: a coyote {"position":"450,1375","size":"100,100"}
+what's a coyote doing all the way out here?
+
+what are you doing all the way out here?
+
+they need you back home, you know?
+
+they're waiting for you.
+
+(live:2s)[(stop:) 
+
+when are you coming home dear?
+
+(live:2s)[(stop:) 
+
+why are you out here dear?
+
+(live:2s)[(stop:) 
+
+what are you waiting for me to say dear?...
+
+(live:2s)[(stop:)
+
+**the storm** grows louder. You've never heard a storm so loud before. It's louder than everything in your head and (if: $paula is true) [Paula] (else:)[the woman sitting by the counter] who's now yelling at you.
+
+(live: 2s)[(stop:) it occurs to you that maybe you should [[get down]], behind something. Take cover perhaps.
+
+]]]]
+
+
+:: a gentle hum {"position":"700,1600","size":"100,100"}
+160,000 miles of road constitute the National Highway System in the US. It is the largest highway system in the world.
+
+Heartbreak Hotel was a diner on a highway that you once visited.
+
+
+:: a little diner {"position":"375,625","size":"100,100"}
+your inventory is filled with [[hope]]. Even from here, it's like the [[sky]] wraps itself around the sides of the diner and stretches around over to the front and time slows and you are getting old but not so fast anymore. 
+
+you stride forwards with all the confidence of someone who knows exactly what kind of coffee they want and stand before [[the door]]
+
+
+:: a shooting star {"position":"750,1425","size":"100,100"}
+shooting stars aren't stars at all.
+
+They're burning out, dying.
+
+They're so pretty.
+
+Make a wish before it's gone.
+
+(live: 2s)[(stop:) before everything's gone. Wiped away by...
+
+(live:2s)[(stop:)
+
+the storm grows louder. You've never heard a storm so loud before. It's louder than everything in your head and (if: $paula is true) [Paula] (else:)[the woman sitting by the counter] who's now yelling at you.
+
+(live: 2s)[(stop:) it occurs to you that maybe you should [[get down]], behind something. Take cover perhaps.
+
+]]]
+
+
+:: blood {"position":"600,700","size":"100,100"}
+//don't just sit there bleeding on my seat! This shit's **alcantara**, it's worth more than you//
+
+
+don't listen to him. It's going to be **[[okay|a little diner]]**
+
+
+:: broken hearts {"position":"600,300","size":"100,100"}
+#''Break''
+//verb//
+to shatter, to destroy, to (if: $giveup is false)[[[give up|give up]]] (else:)[give up]  to drop, to stop trying
+
+
+#''heart ''
+//unspeakable//
+the smell of fear, the mass of electricity in your inventory. It will never stop...
+
+//[[heartbreak|heartbreak hotel]]//
+
+
+:: citrus fever {"position":"550,900","size":"100,100"}
+#Citrus fever
+
+//when [[life|hope]] gives you lemons...//
+
+
+:: coffee {"position":"25,650","size":"100,100"}
+#Caffeine
+
+//substance (not really)//
+
+it [[helps |follow your heart]].
+
+
+:: drove {"position":"600,1250","size":"100,100"}
+and on your drive you saw
+
+[[a shooting star]]
+[[a coyote]]
+[[yourself|myself]]
+
+
+:: empty {"position":"200,975","size":"100,100"}
+He seems to notice your distress.
+
+"we don't take cash, or card for that matter."
+"We just need a little peak into your //heart//"
+
+(live: 1s)[(stop:)
+
+He leans in closer. He smells like the leftovers that get you through the day when you can't work up the energy to make pasta. 
+
+(live: 1s)[(stop:)
+"so tell me, [[who are you]] and [[what's on your mind?]]"]
+
+]
+
 
 :: follow your heart {"position":"200,625","size":"100,100"}
 your heart takes you west down the highway where awaits [[a little diner]] that's only open on the days that don't belong to you.
@@ -944,8 +930,6 @@ your heart takes you west down the highway where awaits [[a little diner]] that'
 It's a quaint little spot with neon lights that cut through the rain. // e rtbreak hotel//. No one's replacing the broken lights. Behind the diner is a parking lot with a single van parked directly opposite the diner door. 
 
 //Welcome to ''Heartbreak Hotel'', the best and only [[coffee]] for miles around. Today's special: working through your problems and the nagging worm at the back of your throat that won't stop writhing.//
-
-
 
 
 :: get down {"position":"475,1525","size":"100,100"}
@@ -967,7 +951,6 @@ you feel [[a gentle hum]] envelope you
 You turn off your GPS. You don't need it here.
 
 [[follow your heart]]
-
 
 
 :: give up {"position":"525,450","size":"100,100"}
@@ -1013,7 +996,6 @@ You don't have pockets, and if you did, they'd be very [[empty]].
 ]
 
 
-
 :: heartbreak hotel {"position":"375,300","size":"100,100"}
 It is raining. More than you have ever seen it rain before.
 
@@ -1040,7 +1022,6 @@ the door closes behind you and a little bell tolls. You are seated on a stool. T
 (live: 2s)[(stop:)
 "aaaand what will we be [[having]] today?"
 ]
-
 
 
 :: hope {"position":"400,825","size":"100,100"}
@@ -1097,7 +1078,6 @@ the sky is purple and pink and green.
 Purple like elusive blue but with a hint of [[blood]] mixed in.
 
 
-
 :: someone {"position":"75,1350","size":"100,100"}
 "It's just been so long, I can't remember who I'm waiting for"
 
@@ -1116,14 +1096,6 @@ you really are thinking as hard as you can but this storm isn't letting up and (
 [[drive|drove]].
 
 ]
-
-
-:: the begin {"position":"0,100","size":"100,100"}
-
-
-
-
-[[heartbreak hotel]] 
 
 
 :: the door {"position":"250,800","size":"100,100"}
@@ -1149,8 +1121,6 @@ You really want to go back there? After last time?
 
 :: try {"position":"750,1075","size":"100,100"}
 [[try harder]] now
-
-
 
 
 :: try harder {"position":"750,1200","size":"100,100"}
