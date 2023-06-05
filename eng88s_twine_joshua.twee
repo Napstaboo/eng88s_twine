@@ -1,0 +1,299 @@
+:: StoryTitle
+eng88s_twine
+
+
+:: StoryData
+{
+  "ifid": "82EA2B3F-D3E2-4F37-AE6B-879536E29B88",
+  "format": "Harlowe",
+  "format-version": "3.3.5",
+  "start": "The Donut Shop",
+  "zoom": 0.6
+}
+
+
+:: (give a reason for why people leave a place permanantly) {"position":"550,1400","size":"100,100"}
+"But I don't understand. How can some people be //happy// in settling down, and not moving constantly to other places? How can a person possibly be happy settling down, having a family, and spending -- eternity-- with that person?"
+
+[[(maybe the possibility of settling down allows growth with that person)]]
+
+
+:: (maybe the possibility of settling down allows growth with that person) {"position":"550,1525","size":"100,100"}
+"hmm...this is true. Just like a farmer sows his seeds into the soil, and grows a tree that grows into a forest. I--"
+
+The old man's eyes widened.
+
+[[what is it?]]
+
+
+
+
+:: *look inside the donut hole* {"position":"1250,1200","size":"100,100"}
+''(text-rotate-x:20)+(text-rotate-z:10)[The cyclone had set the house down very gently—for a cyclone—in the midst of a country of marvelous beauty. There were lovely patches of greensward all about, with stately trees bearing rich and luscious fruits. Banks of gorgeous flowers were on every hand, and birds with rare and brilliant plumage sang and fluttered in the trees and bushes. A little way off was a small brook, rushing and sparkling along between green banks, and murmuring in a voice very grateful to a little girl who had lived so long on the dry, gray prairies.]
+
+(text-rotate-x:25)+(text-rotate-z:35)+(text-rotate-y:2)[
+While she stood looking eagerly at the strange and beautiful sights, she noticed coming toward her a group of the queerest people she had ever seen. They were not as big as the grown folk she had always been used to; but neither were they very small. In fact, they seemed about as tall as Dorothy, who was a well-grown child for her age, although they were, so far as looks go, many years older.
+]
+
+(text-rotate-x:35)+(text-rotate-z:40)+(text-rotate-y:10)[
+Three were men and one a woman, and all were oddly dressed. They wore round hats that rose to a small point a foot above their heads, with little bells around the brims that tinkled sweetly as they moved. The hats of the men were blue; the little woman’s hat was white, and she wore a white gown that hung in pleats from her shoulders. Over it were sprinkled little stars that glistened in the sun like diamonds. The men were dressed in blue, of the same shade as their hats, and wore well-polished boots with a deep roll of blue at the tops. The men, Dorothy thought, were about as old as Uncle Henry, for two of them had beards. But the little woman was doubtless much older. Her face was covered with wrinkles, her hair was nearly white, and she walked rather stiffly.]
+
+(text-rotate-x:15)+(text-rotate-z:-40)+(text-rotate-y:10)[
+When these people drew near the house where Dorothy was standing in the doorway, they paused and whispered among themselves, as if afraid to come farther. But the little old woman walked up to Dorothy, made a low bow and said, in a sweet voice:
+
+“You are welcome, most noble Sorceress, to the land of the Munchkins. We are so grateful to you for having killed the Wicked Witch of the East, and for setting our people free from bondage.”
+
+Dorothy listened to this speech with wonder. What could the little woman possibly mean by calling her a sorceress, and saying she had killed the Wicked Witch of the East? Dorothy was an innocent, harmless little girl, who had been carried by a cyclone many miles from home; and she had never killed anything in all her life.]
+
+
+(text-rotate-y:207)+(text-rotate-z:350)[“But the little woman evidently expected her to answer; so Dorothy said, with hesitation, “You are very kind, but there must be some mistake. I have not killed anything.”
+
+“Your house did, anyway,” replied the little old woman, with a laugh, “and that is the same thing. See!” she continued, pointing to the corner of the house. “There are her two feet, still sticking out from under a block of wood.”
+
+Dorothy looked, and gave a little cry of fright. There, indeed, just under the corner of the great beam the house rested on, two feet were sticking out, shod in silver shoes with pointed toes.
+
+“Oh, dear! Oh, dear!” cried Dorothy, clasping her hands together in dismay. “The house must have fallen on her. Whatever shall we do?
+
+"There is nothing to be done,” said the little woman calmly.]''
+
+[[look out of the donut hole]]
+
+
+:: Glazed donut: 		$1.00 {"position":"450,825","size":"100,100"}
+"a classic donut..."
+
+With one hand, the old man crisps open a paper holder and uses the tongs to place the donut in, handing it to you. 
+
+"these are my favorite donuts to eat. Crispy on the outside, with a layer of crystalline sugar gracing the outside, spongy and soft and warm when you bite into one, and a nice empty inside," he says as he examines it almost as a conservator examining a museum artifact.
+
+[[why did you look into it just now?]]
+
+
+
+
+
+:: Leave. {"position":"950,2025","size":"100,100"}
+
+
+
+:: Maple twist: 			$1.00 {"position":"850,825","size":"100,100"}
+"This is a nice choice! Would you also like a glazed donut?"
+
+[[sure...why not?->Glazed donut: 		$1.00]]
+[[I don't have any money->oh...I'm not very hungry right now...]]
+[[no, thank you ->Leave.]]
+
+
+
+:: Sprinkle donut: 		$1.00 {"position":"650,825","size":"100,100"}
+"Ahh...nice choice," The old man grabs a donut holder, hesitates, and suddenly says,
+"actually, a person whom I loved really liked sprinkled donuts."
+
+[[oh, really?]]
+
+
+:: Strawberry Jelly donuts:	$1.00 {"position":"1250,825","size":"100,100"}
+As he crisps up the paper donut holder, the old man says "I don't understand why you people like donuts with fillings in them. I would much rather eat donuts that have holes in them."
+
+[[why so?]]
+
+
+
+:: The Donut Shop {"position":"950,200","size":"100,100"}
+a pink box emerges in the middle of nowhere, amidst the pouring rain.
+
+a neon sign reads:
+
+<font color="pink"><b>Jim's Donuts</b></font> 
+
+
+
+
+[[stop your car here and go inside]]
+
+
+:: and {"position":"550,1900","size":"100,100"}
+as he is nearing the ceiling, the roof splits open, and he floats
+
+
+
+
+
+
+
+						dreamily
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                       								 											away
+                                                                                                
+                                                                                                
+                                                                                                
+(he has become a //[[moon]]//)
+
+
+:: but I'm not some old man wearing a pink-striped shirt and an apron {"position":"1250,1475","size":"100,100"}
+"Perhaps you are not. But you will be," the old man says.
+"Here, just take a good, hard, look at yourself." The old man says, pointing to the reflective glass panel of the donut display.
+
+[[look into the glass]]
+
+
+:: do you guys still keep in contact with each other? {"position":"650,1075","size":"100,100"}
+"ah..."
+
+
+
+"actually, I'm not quite sure if we are in contact or not. Actually, I started this store here in the hopes that I would find her. You see, a while ago, she fell into a hole, which is normal. But on a certain day, she didn't come back out."
+
+"I dived in to try to find her, but all I could see-- was this,"
+
+The old man thrusts the glazed donut right in front of your eyes.
+
+[[peer into the donut->peer into the donut]]
+
+
+
+:: hmm...like donut holes? {"position":"550,1775","size":"100,100"}
+"Yes! Yes! Yes!
+ <font size="+5000">Yes!</font>"
+ 
+ 
+ 
+The old man goes to the back of the kitchen and pulls out...a bag of raw donut holes, that have never been fried, and stuffs them, greedily, into his mouth.
+
+
+ "In fact, I was you, and you are me throughout all space and time in different forms and shapes. I am everyone on this planet that has ever lived or died, and the person I love is the Earth and all her tempers and her crying."
+
+"The old man puffs up and"
+
+ <font size="+5000">*grows*</font>
+ and
+ rises
+ and 
+ rises
+ and 
+ rises
+ and
+ rises
+ and 
+ rises
+ 
+ [[and]]
+
+
+:: look into the glass {"position":"1250,1600","size":"100,100"}
+*you are the old man. You see what he is looking at. You feel his joy and his pain.*
+
+[[Fry up some hollow donuts->stop your car here and go inside]]
+[[Leave.]]
+
+
+:: look out of the donut hole {"position":"1250,1350","size":"100,100"}
+"So you see, I am not really from this place. And yet I *should* be. Because I was you, and you are me."
+
+[[but I'm not some old man wearing a pink-striped shirt and an apron]]
+
+
+:: moon {"position":"550,2025","size":"100,100"}
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Le_Voyage_dans_la_lune.jpg" alt="Moon">
+
+
+the donut shop lies empty. The apron lays cold on the ground.
+
+You have become an old man.
+
+[[Pick up the apron, and head into the kitchen. ->stop your car here and go inside]]
+[[Leave.]]
+
+
+:: oh, really? {"position":"650,950","size":"100,100"}
+"Yes, I would get donuts with them a long, long, time ago, every day after school, the cheap ones they throw out at the end of every day, so that the morning after, I could crisp them up in my toaster. I don't know if they really liked sprinkled donuts, but they always took the sprinkled and not the glazed donuts, which I really like. Actually, would you like a glazed donut? This one's on the house! I don't know why I am in a reminiscing mood today,"
+
+[[do you guys still keep in contact with each other?]]
+
+
+:: oh...I'm not very hungry right now... {"position":"1725,825","size":"100,100"}
+"oh! not to worry! You seem like you could be energized from a nice and fresh donut, especially after coming from all that cold and wet weather outside, and even if you're not hungry, just take one for the road ahead! Don't worry, this one's on the house."
+
+[[hmm..I'll take a glazed donut then!->Glazed donut: 		$1.00]]
+[[alright...I'll take a sprinkle donut then!->Sprinkle donut: 		$1.00]]
+[[ok...a maple twist then!->Maple twist: 			$1.00]]
+[[strawberry jelly then! ->Strawberry Jelly donuts:	$1.00]]
+[[I'll take a boston cream! ->Strawberry Jelly donuts:	$1.00]]
+
+
+
+:: peer into the donut {"position":"450,1075","size":"100,100"}
+<img src="https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2F2RNK1P0BYVrSCZEy_Sd1Ew%252F3417757448_4a6bdf36ce_o.jpg&width=910" alt="Sunny Day" style="border-radius: 800px;">
+
+[[who are you?]]
+
+
+:: stop your car here and go inside {"position":"950,450","size":"100,100"}
+everything inside is a pink, the tiles are all glazed ceramic pink. An old man, wearing a striped pink button-on with an apron is pacing behind the fresh donuts.
+
+"Welcome! What would you like today?"
+
+
+
+[[Glazed donut: 		$1.00]]
+[[Sprinkle donut: 		$1.00]]
+[[Maple twist: 			$1.00]]
+[[Strawberry Jelly donuts:	$1.00]]
+[[Boston cream donut: 		$1.00->Strawberry Jelly donuts:	$1.00]]
+[[oh...I'm not very hungry right now...]]
+[[I don't have any cash on me...->oh...I'm not very hungry right now...]]
+
+
+:: what is it? {"position":"550,1650","size":"100,100"}
+"I have not realized it all this time. The person I was looking for, was right under my feet all along. They fell through and never came back, because they wanted to be...a //hole//,"
+
+The old man said with some awe.
+
+[[hmm...like donut holes?]]
+
+
+:: what's that other reason? {"position":"1250,1075","size":"100,100"}
+"Hmm...it's probably better if I show you."
+
+With the tongs, the old man clasps a glazed donut delicately and beckens for you to take a look inside the donut hole.
+
+
+[[*look inside the donut hole*]]
+
+
+:: who are you? {"position":"550,1275","size":"100,100"}
+"I am a person that is not from around here. But I came here to search for this person that I love, and learn about why she decided not to come back."
+
+"I think I have a few theories as to why they didn't come back after falling in the hole, but I'm not sure completely. Maybe you could help me out on that."
+
+"Why is it that people leave a place and never come back?"
+
+[[(give a reason for why people leave a place permanantly)]]
+
+
+
+:: why did you look into it just now? {"position":"450,950","size":"100,100"}
+"To see the weather on the other side! Right now it seems quite sunny. Would you like to take a look into the donut?" he says, stretching a side of the donut delicately with his fingers, while still clasping it with tongs.
+
+[[peer into the donut]]
+
+
+:: why so? {"position":"1250,950","size":"100,100"}
+"hmmm...I guess for me, donuts are just sustenance designed to keep my body functional. When I eat it, it allows me to gain my energy needed for the day. Sure, it is a sweet treat for the senses, which gives me some sort of trigger for a sense of happiness, but in the end the main purpose is to give me some energy, and donuts give a lot of that.
+
+I guess I like donuts for another reason..."
+
+
+[[what's that other reason?]]
+
