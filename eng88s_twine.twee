@@ -1,10 +1,10 @@
 :: StoryTitle
-eng88s_twine_heartbreak R1
+eng88s_twine
 
 
 :: StoryData
 {
-  "ifid": "81ACC315-8A3F-4A48-863B-6696838CA6E8",
+  "ifid": "474fe4a9-9131-4be3-96d3-4991427dec94",
   "format": "Harlowe",
   "format-version": "3.3.5",
   "start": "Untitled Passage",
@@ -52,7 +52,7 @@ she narrows her eyes.
 ]
 
 
-:: Taco Bell {"position":"625,50","size":"100,100"}
+:: Taco Bell {"position":"100,0","size":"100,100"}
 
 
 
@@ -69,7 +69,7 @@ In order to have the best experience, please allow access to your camera and mic
 (text-color: blue)[~~what is going on?~~]
 
 
-:: Untitled Passage {"position":"375,50","size":"100,100"}
+:: Untitled Passage {"position":"0,0","size":"100,100"}
 if you can see this, it's working wooo :3 (this is your start node, change it to whatever u want lol)
 
 [[Taco Bell]]
@@ -378,7 +378,7 @@ you really are thinking as hard as you can but this storm isn't letting up and (
 ]
 
 
-:: the begin {"position":"375,175","size":"100,100"}
+:: the begin {"position":"0,100","size":"100,100"}
 
 
 
