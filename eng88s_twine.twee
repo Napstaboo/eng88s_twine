@@ -42,7 +42,7 @@ The figure stands between you and the exit.
 :: "Get back in your car right now." {"position":"1450,700","size":"100,100"}
 You get back in the car-- that was weird. 
 
-[[DRIVE FORWARD]] 
+[[DRIVE FORWARD]]
 
 
 :: And so the eagle soars. {"position":"1500,425","size":"100,100"}
@@ -95,8 +95,6 @@ Your stomach grumbles, and you realize that you never actually got any food at t
  (if: $sec < 1)[(if: $tacobellbomb is 'true')[
 In the distance, you hear a loud ''BOOM''.  You look in your rear view mirror-- it seems like only the Taco Bell exploded. Seems like their plan backfired.
  ]]]
- 
- 
 
 
 :: Huh? {"position":"1625,425","size":"100,100"}
@@ -143,8 +141,6 @@ A car identical to yours idles in front of you.
 ]
 
 
-
-
 :: Live Menos. {"position":"1825,2000","size":"100,100"}
 (set: $livemas's 3rd to [(text-color:purple)[YOUR ]])
 (set: $livemas's 13th to "[[MIND]] ")
@@ -152,8 +148,6 @@ A car identical to yours idles in front of you.
 (if: $livemas's length > 0)[\
 	(for: each _item, ...$livemas)[_item]
 ]
-
-
 
 
 :: MIND {"position":"850,1650","size":"100,100"}
@@ -192,7 +186,7 @@ The figure pulls out a book called "LIVE MENOS" and begins reading from it. You 
 ]
 
 
-:: Taco Bell {"position":"1175,50","size":"100,100"}
+:: Taco Bell {"position":"100,0","size":"100,100"}
 (if: $order is not 0)[You drive forward to the order screen.]
 (else:)[You drive up the exit to get to Taco Bell.]
 
@@ -212,11 +206,11 @@ You feel weird, like you've done this all before. You check yourself for any sig
  (if: _sec > 3)[(restart:)]]
 
 
-
-:: Untitled Passage {"position":"425,100","size":"100,100"}
+:: Untitled Passage {"position":"0,0","size":"100,100"}
 if you can see this, it's working wooo :3 (this is your start node, change it to whatever u want lol)
 
 [[Taco Bell]]
+[[begin]]
 
 
 :: baja blast {"position":"850,275","size":"100,100"}
@@ -235,6 +229,10 @@ if you can see this, it's working wooo :3 (this is your start node, change it to
 (if: (visited: "book knowledge"))[The figure gives a self-satisfied smile.] They head to a bookcase and pull on a book. The bookcase opens up.
 
 [["Come forth."]]
+
+
+:: begin {"position":"0,100","size":"100,100"}
+
 
 
 :: book knowledge {"position":"1075,1650","size":"100,100"}
@@ -329,8 +327,6 @@ With your elite knowledge, your mind is not corrupted by these ancient glyphs. Y
 (text-size:3)[[LIVE MENOS.]]]
 
 
-
-
 :: diffuse with crunchwrap {"position":"1575,2125","size":"100,100"}
 (live:1s)[ (set: $sec to it - 1)
 |amount>[$sec]
@@ -350,7 +346,6 @@ With your elite knowledge, your mind is not corrupted by these ancient glyphs. Y
 
 [[escape!]]
 [[hit the control pannel]]
-
 
 
 :: diffuse with potion {"position":"1425,2125","size":"100,100"}
@@ -395,7 +390,6 @@ The figure sets their jaw.
 [[continue->book knowledge]]]]
 
 
-
 :: drink it {"position":"1725,1475","size":"100,100"}
 (if:(visited: "diffuse with potion"))[You chug the potion.]
 (else-if:(visited:"diffuse with crunchwrap"))[You bite into the crunchwrap.]
@@ -432,8 +426,7 @@ GAME OVER
 
 Restart?
 
-[[Taco Bell->Taco Bell 2]] 
-
+[[Taco Bell->Taco Bell 2]]
 
 
 :: ending {"position":"1050,1950","size":"100,100"}
@@ -450,7 +443,7 @@ for the other restaraunts' endings:
 
 (if: (visited: "Taco Bell"))[You hear a rumble in the distance coming from the direction of the Taco Bell. Suddenly, you realize that you never stopped them from developing that bomb. 
 
-if visited the passage to just get on the highway and 
+if visited the passage to just get on the highway and
 
 
 :: escape! {"position":"1100,2275","size":"100,100"}
@@ -471,7 +464,6 @@ The exit route is unimpeded!
 Their eyes shine like rubies, cold and calculating.
 
 [[continue->business room]]
-
 
 
 :: follow the wizard robe {"position":"1125,1200","size":"100,100"}
@@ -497,8 +489,6 @@ You see a fork in the hall that leads to two rooms.
 
 [[go to the right->wizard room]]
 [[go to the left->business room]]
-
-
 
 
 :: hit the control pannel {"position":"1275,2275","size":"100,100"}
@@ -592,7 +582,6 @@ The book is nearly the size of your head, but you manage to hoist it onto the ta
 (set: $book to 1)
 
 
-
 :: pick up a money bag {"position":"650,1450","size":"100,100"}
 The jingle of the coins alerts the figure. They spin to face you.
 
@@ -610,7 +599,6 @@ Their eyes are hard and sharp.
 (set: $moneybag to 1)
 
 
-
 :: pick up a potion {"position":"1275,1375","size":"100,100"}
 The clink of the potion bottles alerts the figure. They spin to face you.
 
@@ -622,10 +610,6 @@ Their eyes are crazed and fearful.
  [[steal it]]
  [[drink it]]
  [[put it back]]]]
-
-
-
-
 
 
 :: pull forward {"position":"700,550","size":"100,100"}
@@ -654,8 +638,6 @@ They walk to the back of the room to a bookcase and pull out a book. The bookcas
 [["Come forth."]]
 
 
-
-
 :: slow down {"position":"1275,950","size":"100,100"}
 The Taco Bell employee has had their eye trained on your exact location, and this time, they don't miss.
 
@@ -671,7 +653,6 @@ You look up to find that you crashed into (set: $sec to 0) (live:1s)[ (set: $sec
 
 [[get into the empty car->Taco Bell]]
 [[go into the passage]]]]
-
 
 
 :: steal it {"position":"1450,1525","size":"100,100"}
@@ -774,7 +755,6 @@ Potions bubble in beakers on the tables. A collection of massive books line the 
 [[pick up a potion]]
 
 [[pick up a book]]
-
 
 
 :: your order is {"position":"725,400","size":"100,100"}
