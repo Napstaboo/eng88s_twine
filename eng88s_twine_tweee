@@ -1,0 +1,788 @@
+:: StoryTitle
+eng88s_twine
+
+
+:: StoryData
+{
+  "ifid": "82EA2B3F-D3E2-4F37-AE6B-879536E29B88",
+  "format": "Harlowe",
+  "format-version": "3.3.5",
+  "start": "Untitled Passage",
+  "zoom": 0.6
+}
+
+
+:: \ read the book {"position":"850,1400","size":"100,100"}
+You open the book to the middle and strain to see the text inside. It looks like mystical runes, but upon further inspection, you see it just says "//Live Mas//" over and over.
+
+[[Live Mas.]]
+
+
+(set: $livemas to (a:""))
+(set: _counter to 0)
+
+(live: 0.001s)[
+(set: $livemas to it + (a: "''LIVE MAS ''"))
+(set: _counter to it + 1)
+(if: _counter is 200)[(stop:)]
+]
+
+
+:: "Come forth." {"position":"1300,1900","size":"100,100"}
+You follow the figure into a dark room behind the bookcase. They flick on the lights, and your eyes take a moment to adjust. 
+
+The room is circular and sterile, nothing like the cluttered room you just came from. There is a large device in the middle of the room with a control panel beneath it.
+
+The figure stands between you and the exit.
+
+(if: (visited: "wizard room"))[[[What's that?->wizard bomb]]]
+(else:)[[[What's that?->business bomb]]]
+
+
+:: "Get back in your car right now." {"position":"1450,700","size":"100,100"}
+You get back in the car-- that was weird. 
+
+[[DRIVE FORWARD]] 
+
+
+:: And so the eagle soars. {"position":"1500,425","size":"100,100"}
+[[...->incorrect]]
+
+
+:: And the raven flies at dusk. {"position":"1325,425","size":"100,100"}
+[[...->correct]]
+
+
+:: CORRUPTED {"position":"850,1775","size":"100,100"}
+(set: $livemas's 39th to [(text-color:purple)[''CORRUPTED '' ]])
+(set: $livemas's 42th to [(text-color:purple)[''BY '' ]])
+(set: $livemas's 50nd to [(text-color:purple)[''THIS '' ]])
+(set: $livemas's 55th to [(text-color:purple)[''ANCIENT '' ]])
+(set: $livemas's 60th to "[[KNOWLEDGE]] ")
+
+(if: $livemas's length > 0)[\
+(for: each _item, ...$livemas)[_item]]
+
+
+:: DRIVE BACKWARD {"position":"1675,575","size":"100,100"}
+You were too distracted by ordering to notice that another car has pulled up behind you!
+
+You crash.
+
+[[end]]
+
+
+:: DRIVE FORWARD {"position":"1625,850","size":"100,100"}
+A ''BOOM'' resonates behind you.
+(if: $order is > 2.4)[Your order goes flying, covering your seats in grease. 
+The liquid starts to steam, and the faux leather of your car begins to bubble and burst.
+[[oh god!]]
+]
+(else:)[Thank god you didn't order any food-- it would've gone flying in that explosion. You look back and see a giant crater in the exact spot you were just in. 
+[[step on it!->speed up]]
+[[look back!->slow down]]
+]
+
+
+:: Get in {"position":"1700,2500","size":"100,100"}
+You get in the car and speed away.
+
+Your stomach grumbles, and you realize that you never actually got any food at the Taco Bell. There are some other restaurants around town. Maybe you can get some food there?
+
+[[Untitled Passage]] 
+
+(live:1s)[ (set: $sec to it - 1)
+ (if: $sec < 1)[(if: $tacobellbomb is 'true')[
+In the distance, you hear a loud ''BOOM''.  You look in your rear view mirror-- it seems like only the Taco Bell exploded. Seems like their plan backfired.
+ ]]]
+ 
+ 
+
+
+:: Huh? {"position":"1625,425","size":"100,100"}
+[[...->incorrect]]
+
+
+:: I said what I said. {"position":"1425,300","size":"100,100"}
+"The eagle flies at dawn."
+
+[[And the raven flies at dusk.]]
+
+[[And so the eagle soars.]]
+
+[[Huh?]]
+
+
+:: KNOWLEDGE {"position":"975,1775","size":"100,100"}
+(set: $livemas's 60th to [(text-color:purple)[''KNOWLEDGE '' ]])
+(set: $livemas's 100th to "[[LIVE MAS->end]] ")
+
+
+(if: $livemas's length > 0)[\
+(for: each _item, ...$livemas)[_item]]
+
+
+:: LIVE MENOS. {"position":"1350,2450","size":"100,100"}
+You shout the ancient words back at the figure at the top of your lungs, flattening them and stopping the countdown. 
+
+You hover out of the room and out the dark passage, the clarity you feel only broken by the daylight that waits outside the Taco Bell.
+
+A car identical to yours idles in front of you.
+
+[[Get in]]
+
+(set: $tacobellbomb to 'false')
+
+
+:: Live Mas. {"position":"850,1525","size":"100,100"}
+(set: $livemas's 3rd to [(text-color:purple)[YOUR ]])
+(set: $livemas's 13th to "[[MIND]] ")
+
+(if: $livemas's length > 0)[\
+	(for: each _item, ...$livemas)[_item]
+]
+
+
+
+
+:: Live Menos. {"position":"1825,2000","size":"100,100"}
+(set: $livemas's 3rd to [(text-color:purple)[YOUR ]])
+(set: $livemas's 13th to "[[MIND]] ")
+
+(if: $livemas's length > 0)[\
+	(for: each _item, ...$livemas)[_item]
+]
+
+
+
+
+:: MIND {"position":"850,1650","size":"100,100"}
+(set: $livemas's 13th to [(text-color:purple)[''MIND'' ]])
+(set: $livemas's 21st to [(text-color:purple)[''HAS '' ]])
+(set: $livemas's 30th to [(text-color:purple)[''BEEN '' ]])
+(set: $livemas's 39th to "''[[CORRUPTED]] ''")
+
+(if: $livemas's length > 0)[\
+(for: each _item, ...$livemas)[_item]]
+
+
+:: RUN! {"position":"1575,2425","size":"100,100"}
+You fly out the door, out the mysterious rooms, out the dark passage and into the light of day. A car identical to yours in every way idles outside of the passage. 
+
+[[Get in]]
+
+
+:: Run! {"position":"1600,2000","size":"100,100"}
+(live:1s)[ (set: $sec to it - 1)
+|amount>[$sec]
+ (if: $sec < 1)[(go-to:"end")]]
+ You try to run, but there are no visible exits.
+
+The figure pulls out a book called "LIVE MENOS" and begins reading from it. You feel your brain start to melt. You're having trouble standing upright.
+
+[[Live Menos.]]
+
+(set: $livemas to (a:""))
+(set: _counter to 0)
+
+(live: 0.001s)[
+(set: $livemas to it + (a: "''LIVE MENOS ''"))
+(set: _counter to it + 1)
+(if: _counter is 200)[(stop:)]
+]
+
+
+:: Taco Bell {"position":"1175,50","size":"100,100"}
+(if: $order is not 0)[You drive forward to the order screen.]
+(else:)[You drive up the exit to get to Taco Bell.]
+
+"Hi, welcome to Taco Bell. Can I take your order."
+
+[[yeah->order screen]]
+
+[[no->can't take order]]
+
+(set: $order to 0.00)
+
+
+:: Taco Bell 2 {"position":"1375,0","size":"100,100"}
+You feel weird, like you've done this all before. You check yourself for any signs of damage-- not even a scratch. Huh.
+
+(set: _sec to 0) (live:1s)[ (set: _sec to it + 1)
+ (if: _sec > 3)[(restart:)]]
+
+
+
+:: Untitled Passage {"position":"425,100","size":"100,100"}
+if you can see this, it's working wooo :3 (this is your start node, change it to whatever u want lol)
+
+[[Taco Bell]]
+
+
+:: baja blast {"position":"850,275","size":"100,100"}
+"Will that be all?"
+
+[[yes->your order is]]
+
+[[no->order screen]]
+
+(set: $baja to 'true')
+
+(set: $order to it +2.39)
+
+
+:: before the bomb {"position":"1225,1650","size":"100,100"}
+(if: (visited: "book knowledge"))[The figure gives a self-satisfied smile.] They head to a bookcase and pull on a book. The bookcase opens up.
+
+[["Come forth."]]
+
+
+:: book knowledge {"position":"1075,1650","size":"100,100"}
+The figure whispers something incomprehensible in your ear. You experience cosmic clarity unlike anything you've encountered before, including when you did that entire sheet of acid freshman year. The planets have aligned, your chakras have cleared, and for a brief second you feel like everything makes sense. 
+
+(if: (visited: "wizard room"))[You gained elite wizard knowledge. Maybe you'll be able to read those books now.]
+(else:)[You gained elite business knowledge. Maybe you'll be able to read those books now.]
+
+[[continue->before the bomb]]
+
+
+(set: $bookknowledge to 'true')
+
+
+:: business bomb {"position":"1200,2025","size":"100,100"}
+"We've been hemorrhaging money to the other restaraunts in the area. I have no idea why no one wants to come here, but we're developing a secret weapon to weed out the competition."
+
+The figure has a crazed look in their eyes. They point at the device.
+
+"This bomb will detonate in two minutes, exploding all the restaraunts in the area."
+(if: $bookknowledge is 'true')[[[!??!?->diffuse with book]]]
+(else-if: $moneybag is 1)[[[!??!?->diffuse with moneybag]]]
+(set: $sec to 120)
+(live:1s)[ (set: $sec to it - 1)
+|amount>[$sec]
+ (if: $sec < 1)[(go-to:"end")]]
+
+
+:: business room {"position":"750,1200","size":"100,100"}
+(if: (visited: "go into the passage"))[You head down the hall to a room on the left. You see a shadowy figure in a gaudy green tuxedo standing in the corner. They don't see you.]
+(else:)[You follow the tuxedoed figure down a hall and into a room on the left]
+
+Massive law books line the walls. Money bags lay at the foot of the bookshelves.
+
+[[pick up a book]]
+
+[[pick up a money bag]]
+
+
+:: can't take order {"position":"1425,125","size":"100,100"}
+"What?"
+
+[[I said what I said.]]
+
+[[Haha, just kidding.->order screen]]
+
+
+:: continue {"position":"1050,675","size":"100,100"}
+You get out of your car and step into the opening. 
+
+Two shadowy figures stand at the entrance, ready to greet you. One is in a gaudy green tuxedo, and the other is in a matted old wizard's robe.
+
+(if: $order is not 0)[
+"I see you chose the indirect code. Are you being followed?"
+
+[[yes->followed]]
+[[no->not followed]]]
+
+(else:)[
+They beckon you forth.
+[[follow the tuxedo]]
+[[follow the wizard robe]]]
+
+
+:: correct {"position":"1175,550","size":"100,100"}
+(if: $crunchwrap is not 'true')
+["Correct."]
+
+A panel opens in the side of the Taco Bell.
+
+[[continue]]
+
+
+:: crunchwrap supreme {"position":"800,150","size":"100,100"}
+"Cool."
+
+[[that's all->your order is]]
+[[can I also get...->number nine with a twist]]
+(set: $crunchwrap to 'true')
+(set: $order to it + 4.89)
+
+
+:: diffuse with book {"position":"1300,2150","size":"100,100"}
+(live:1s)[ (set: $sec to it - 1)
+|amount>[$sec]
+ (if: $sec < 1)[(go-to:"end")]]
+ 
+The figure pulls out a book titled "LIVE MENOS" and starts reading from it. 
+
+With your elite knowledge, your mind is not corrupted by these ancient glyphs. You actually sort of understand what they're saying-- there might be something you can do to diffuse the bomb.
+
+(text-size:3)[[LIVE MENOS.]]]
+
+
+
+
+:: diffuse with crunchwrap {"position":"1575,2125","size":"100,100"}
+(live:1s)[ (set: $sec to it - 1)
+|amount>[$sec]
+ (if: $sec < 1)[(go-to:"end")]]
+ You remember you have a crunchwrap in your posession! You slowly take out the beaten up 'food' item.
+
+[[eat it->drink it]]
+[[throw it]]
+(set: $tacobellbomb to 'true')
+
+
+:: diffuse with moneybag {"position":"1150,2150","size":"100,100"}
+(live:1s)[ (set: $sec to it - 1)
+|amount>[$sec]
+ (if: $sec < 1)[(go-to:"end")]]
+ You remember the money bag heavy in your hand. You could probably do something about this.
+
+[[escape!]]
+[[hit the control pannel]]
+
+
+
+:: diffuse with potion {"position":"1425,2125","size":"100,100"}
+(live:1s)[ (set: $sec to it - 1)
+|amount>[$sec]
+ (if: $sec < 1)[(go-to:"end")]]
+ 
+You remember the potion you pocketed earlier-- maybe that will help you escape this room!
+ 
+ [[toss it on the figure]]
+ [[toss it on the control panel]]
+ [[drink it]]
+
+
+:: don't drop it {"position":"900,525","size":"100,100"}
+You take the Baja Blast into your vehicle. The soda has melted onto your hands, gluing them to the cup. It begins spilling onto your lap, and despite how much ice the worker put in there, the liquid burns-- your flesh is searing, your essence is evaporating into the air, and before you disappear completely, you let out a singular scream.
+
+Why did you do that?
+
+[[end]]
+
+
+:: don't read book {"position":"1050,1475","size":"100,100"}
+The figure seems to be done with whatever they were doing in the corner. They walk over to you. 
+
+"Ah. //Live Mas. // You didn't read that book, did you? 
+
+No. 
+(if: (visited: "wizard room"))[(click-replace: "No.")[Good. The knowledge would have been too much for you. The people I've seen destroyed by those books... the ones I've lost..."
+
+The figure stares wistfully into the distance.
+
+"Come, my child. I will teach you the ways of the Bell."
+
+[[continue->book knowledge]]]]
+(else:)[(click-replace: "No.")[Good. It would have been too much for you.
+
+The figure sets their jaw.
+
+"Come. I'll tell you how to interpret the books."
+
+[[continue->book knowledge]]]]
+
+
+
+:: drink it {"position":"1725,1475","size":"100,100"}
+(if:(visited: "diffuse with potion"))[You chug the potion.]
+(else-if:(visited:"diffuse with crunchwrap"))[You bite into the crunchwrap.]
+(else:)[You chug the potion before the figure in the wizard robe has time to react.]
+
+As soon as it touches your lips, they start to burn and swell. The pain of your flesh melting would make you scream-- if you even had a throat anymore. 
+
+You are a puddle on the floor now; all you know is pain. The last thing you see is the figure in the wizard robe mopping you up into a new bottle marked "secret formula." 
+
+[[end]]
+
+
+:: drive forward {"position":"650,1000","size":"100,100"}
+Mmm, can't wait to chow down on this grub. 
+
+[[DRIVE FORWARD]]
+
+
+:: drop it {"position":"900,650","size":"100,100"}
+"Dude, what the fawk? That's a waste."
+
+The worker climbs out of the window and starts to lap up the drink. Despite the fact the drink is melting a hole in the asphalt, it seems refreshing to them.
+
+(if: $crunchwrap is 'true')[
+"Can I get a bite of that 'wrap too?"
+
+[[sure->correct]]
+]
+[[nuh uh]]
+
+
+:: end {"position":"1850,100","size":"100,100"}
+GAME OVER
+
+Restart?
+
+[[Taco Bell->Taco Bell 2]] 
+
+
+
+:: ending {"position":"1050,1950","size":"100,100"}
+You get back on the highway. You realize you're still very hungry-- you didn't eat anything at the Taco Bell, 
+Now that the adrenaline has worn off, 
+
+The figure's eyes are terrified and terrifying. 
+business -> 
+We've been losing money to the other restaraunts in the area. I have no idea why no one wants to come here, but we're developing a secret weapon to weed out the competition. 
+The figure pulls out a book titled "LIVE MENOS." 
+
+
+for the other restaraunts' endings:
+
+(if: (visited: "Taco Bell"))[You hear a rumble in the distance coming from the direction of the Taco Bell. Suddenly, you realize that you never stopped them from developing that bomb. 
+
+if visited the passage to just get on the highway and 
+
+
+:: escape! {"position":"1100,2275","size":"100,100"}
+(live:1s)[ (set: $sec to it - 1)
+|amount>[$sec]
+ (if: $sec < 1)[(go-to:"end")]]
+You throw a couple of coins as a diversion, and the figure runs to pick them up.
+
+The exit route is unimpeded!
+
+[[take the money and run!]]
+[[try to diffuse the bomb]]
+
+
+:: follow the tuxedo {"position":"1000,1200","size":"100,100"}
+"Sublime choice, little one. Come this way, and I will show you the wonders of business like you have never seen before."
+
+Their eyes shine like rubies, cold and calculating.
+
+[[continue->business room]]
+
+
+
+:: follow the wizard robe {"position":"1125,1200","size":"100,100"}
+"Good choice, young one. Come this way, and I will show you the magics behind our 'food.'"
+
+Their lips part, and they whisper something incomprehensible under their breath.
+
+[[continue->wizard room]]
+
+
+:: followed {"position":"1225,700","size":"100,100"}
+"What?!"
+
+The figures look around outside, trying not to be conspicuous. 
+
+[["Get back in your car right now."]]
+
+
+:: go into the passage {"position":"1575,1225","size":"100,100"}
+You enter the passage. You think you'll have to walk around blindly, but the hall seems to be backlit by an unearthly glow. 
+
+You see a fork in the hall that leads to two rooms.
+
+[[go to the right->wizard room]]
+[[go to the left->business room]]
+
+
+
+
+:: hit the control pannel {"position":"1275,2275","size":"100,100"}
+(live:0.5s)[ (set: $sec to it - 1)
+|amount>[$sec]
+ (if: $sec < 1)[(go-to:"end")]]
+You bang the money bag on the control panel. The countdown gets quicker. Oops.
+
+[[RUN!]]
+
+(set: $tacobellbomb to 'true')
+
+
+:: incorrect {"position":"1500,550","size":"100,100"}
+"That was incorrect. You will now be terminated."
+
+[[DRIVE FORWARD]]
+
+[[DRIVE BACKWARD]]
+
+
+:: not followed {"position":"1050,800","size":"100,100"}
+"Phew."
+
+[[follow the tuxedo]] 
+[[follow the wizard robe]]
+
+
+:: notes {"position":"1625,50","size":"100,100"}
+- open panel in the side of the taco bell
+- crunchwrap
+-
+
+
+:: nuh uh {"position":"900,800","size":"100,100"}
+You need to get the hell out of here-- this is too weird for you.
+
+[[DRIVE FORWARD]]
+
+
+:: number nine with a twist {"position":"1075,350","size":"100,100"}
+(if: $crunchwrap is 'true')[
+...a number nine with a twist?
+](set: $numbernine to 'true')
+"Twist how?"
+
+[[Bop it!->correct]]
+
+[[Pull it!->incorrect]]
+
+[[Never mind.->your order is]]
+(if: $baja is not 'true')[ [[Just add a baja blast.->baja blast]] ]
+
+
+:: oh god! {"position":"1450,975","size":"100,100"}
+The thick faux leather fumes quickly obscure your line of sight and your breathing. You fumble for the window button, but it's not working! You don't know where you're going, but you're going there fast.
+
+[[slow down]]
+[[speed up]]
+
+
+:: order screen {"position":"1175,200","size":"100,100"}
+(if: $baja is 'true')[
+Can I get a...
+
+[[crunchwrap supreme]]
+
+[[number nine with a twist]]]
+(else:)[
+Can I get a...
+
+[[crunchwrap supreme]]
+
+[[baja blast]]
+
+[[number nine with a twist]]]
+
+
+:: pick up a book {"position":"975,1325","size":"100,100"}
+The book is nearly the size of your head, but you manage to hoist it onto the table, kicking up a cloud of dust. It lands with a ''CRASH''--
+
+(set: $sec to 0) (live:1s)[ (set: $sec to it + 1)
+ (if: $sec > 1)[-- but the figure doesn't seem to notice.]
+ 
+ (if: $sec > 3)[Read it? 
+
+[[yes-> read the book]]
+[[[no->don't read book]]] ]
+]
+
+(set: $book to 1)
+
+
+
+:: pick up a money bag {"position":"650,1450","size":"100,100"}
+The jingle of the coins alerts the figure. They spin to face you.
+
+"Greedy, aren't you?" 
+Their eyes are hard and sharp.
+(set: $sec to 0) (live:1s)[ (set: $sec to it + 1)
+ (if: $sec > 1)["You'll fit right in here."]
+ 
+ (if: $sec > 2)[You relax a bit and tighten your grip on the bag. 
+ 
+ "Here. I have something to show you."
+ 
+ [[continue->before the bomb]]]]
+
+(set: $moneybag to 1)
+
+
+
+:: pick up a potion {"position":"1275,1375","size":"100,100"}
+The clink of the potion bottles alerts the figure. They spin to face you.
+
+"What are you doing with that!?" 
+Their eyes are crazed and fearful.
+(set: $sec to 0) (live:1s)[ (set: $sec to it + 1)
+ (if: $sec > 1)["That's the secret ingredient for all of our recipes!"]
+ (if: $sec > 2)[
+ [[steal it]]
+ [[drink it]]
+ [[put it back]]]]
+
+
+
+
+
+
+:: pull forward {"position":"700,550","size":"100,100"}
+The worker hands you your order. 
+
+(if: $baja is 'true')[Suddenly, the baja blast begins melting through the cup! 
+
+[[drop it]] 
+
+[[don't drop it]]]
+
+(else:)[
+
+[[drive forward]]
+
+]
+
+
+:: put it back {"position":"1300,1525","size":"100,100"}
+You turn around to put the potion back. The figure's eyes calm.
+
+"This room is filled with arcane knowledge, the likes of which are dangerous for even a seasoned individual such as myself. You have to be careful here." 
+
+They walk to the back of the room to a bookcase and pull out a book. The bookcase opens up.
+
+[["Come forth."]]
+
+
+
+
+:: slow down {"position":"1275,950","size":"100,100"}
+The Taco Bell employee has had their eye trained on your exact location, and this time, they don't miss.
+
+[[end]]
+
+
+:: speed up {"position":"1750,950","size":"100,100"}
+You ''CRASH'' into something and go flying through the windshield! Coughing and sputtering, you check yourself for injuries-- you're unscathed. Actually, you feel better than ever. 
+
+You look up to find that you crashed into (set: $sec to 0) (live:1s)[ (set: $sec to it + 1) (if: $sec > 5)[the back wall of the Taco Bell! ]
+ 
+ (if: $sec > 7)[A mysterious passage opens in front of you. Behind you, an empty car waits patiently in the drive thru line.
+
+[[get into the empty car->Taco Bell]]
+[[go into the passage]]]]
+
+
+
+:: steal it {"position":"1450,1525","size":"100,100"}
+You turn around to put the potion back, but secretly pocket it. The figure doesn't seem to notice.
+
+"This room is filled with arcane knowledge, the likes of which are dangerous for even a seasoned individual such as myself. You have to be careful here." 
+
+They walk to the back of the room to a bookcase and pull out a book. The bookcase opens up.
+
+[["Come forth."]]
+
+
+(set: $potion to 1)
+
+
+:: take the money and run! {"position":"1100,2400","size":"100,100"}
+(live:1s)[ (set: $sec to it - 1)
+|amount>[$sec]
+ (if: $sec < 1)[(go-to:"end")]]
+The figure was right-- you are greedy. You cling tightly to your bag of money and make a break for it.
+
+[[RUN!]]
+(set: $tacobellbomb to 'true')
+
+
+:: throw it {"position":"1700,2225","size":"100,100"}
+(live:1s)[ (set: $sec to it - 1)
+|amount>[$sec]
+ (if: $sec < 1)[(go-to:"end")]]
+You throw the crunchwrap across the room, and the figure scrambles to grab it. The exit is unimpeded.
+
+[[RUN!]]
+
+(set: $tacobellbomb to 'true')
+
+
+:: toss it on the control panel {"position":"1550,2250","size":"100,100"}
+(live:1s)[ (set: $sec to it - 1)
+|amount>[$sec]
+ (if: $sec < 1)[(go-to:"end")]]
+ 
+You uncork the potion and toss it on the control pannel. It starts to melt instantly, sparks lighting up the small room.
+ 
+ "NOOOOO!!!!!! My intricate and well thought out plan!!!!!"
+ 
+ The figure is a wreck. They fall to their knees, leaving a clear path to the exit.
+ 
+ [[RUN!]]
+ 
+ (set: $tacobellbomb to 'false')
+
+
+:: toss it on the figure {"position":"1400,2275","size":"100,100"}
+(live:1s)[ (set: $sec to it - 1)
+|amount>[$sec]
+ (if: $sec < 1)[(go-to:"end")]]
+ You toss the potion on the figure. Their eyes widen and they begin to scream. 
+
+"NOOOOOO!!!!!!"
+
+The potion melts both the figure and the door behind them. You'd better get out of there quick before the bomb detonates.
+
+[[RUN!]]
+
+(set: $tacobellbomb to 'true')
+
+
+:: try to diffuse the bomb {"position":"1225,2400","size":"100,100"}
+You notice a coin slot in the side of the control panel. You insert a coin, and the countdown stops. 
+
+The figure is unaware that the countdown has stopped, but they're going to find out soon-- you'd better run if you want to get out of there unscathed.
+
+[[RUN!]]
+
+(set: $tacobellbomb to 'false')
+
+
+:: wizard bomb {"position":"1375,2025","size":"100,100"}
+"No one comes to eat our 'food' anymore. I have no idea why they don't, but we're developing a secret weapon to weed out the competition."
+
+The figure has a crazed look in their eyes. They point at the device.
+
+"This bomb will detonate in two minutes, exploding all the restaraunts in the area."
+(if: $bookknowledge is 'true')[[[!??!?->diffuse with book]]]
+(else-if: $potion is 1)[[[!??!?->diffuse with potion]]]
+(else-if: $crunchwrap is 'true')[[[!??!?->diffuse with crunchwrap]]]
+(else:)[[Run!]]
+(set: $sec to 120)
+(live:1s)[ (set: $sec to it - 1)
+|amount>[$sec]
+ (if: $sec < 1)[(go-to:"end")]]
+
+
+:: wizard room {"position":"1275,1225","size":"100,100"}
+(if: (visited: "go into the passage"))[You head down the hall to a room on the right. You see a shadowy figure in a matted old wizard robe standing in the corner. They don't see you.]
+(else:)[You follow the robed figure down a hall and into a room on the right.]
+
+Potions bubble in beakers on the tables. A collection of massive books line the walls. 
+
+[[pick up a potion]]
+
+[[pick up a book]]
+
+
+
+:: your order is {"position":"725,400","size":"100,100"}
+(if: $numbernine is 'true')[(set: $order to it + 4.78)]
+"Okay. Your total is $$order at the first window."
+
+[[pull forward]]
+
+
+:: StoryScript [script]
+console.log("LIVE MAS ".repeat(5))
