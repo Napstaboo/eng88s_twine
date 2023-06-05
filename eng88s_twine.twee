@@ -4,25 +4,284 @@ eng88s_twine
 
 :: StoryData
 {
-  "ifid": "82EA2B3F-D3E2-4F37-AE6B-879536E29B88",
+  "ifid": "eecc6319-7531-478a-9954-1665d162d6d8",
   "format": "Harlowe",
   "format-version": "3.3.5",
   "start": "Untitled Passage",
-  "zoom": 1
+  "zoom": 0.6
 }
 
 
-:: Untitled Passage {"position":"425,100","size":"100,100"}
+:: And so the eagle soars. {"position":"1500,425","size":"100,100"}
+[[...->incorrect]]
+
+
+:: And the raven flies at dusk. {"position":"1300,450","size":"100,100"}
+[[...->correct]]
+
+
+:: DRIVE BACKWARD {"position":"1600,675","size":"100,100"}
+You were too distracted by ordering to notice that another car has pulled up behind you!
+
+You crash.
+
+[[end]]
+
+
+:: DRIVE FORWARD {"position":"1350,1150","size":"100,100"}
+A ''BOOM'' resonates behind you.
+(if: $order is not 0)[
+Your order goes flying, covering your seats in grease. 
+The liquid starts to steam, and the faux leather of your car begins to bubble and burst.
+[[oh god!]]
+]
+(else:)[
+Thank god you didn't order anything-- it would've gone flying in that explosion. You look back and see a giant crater in the exact spot you were just in. 
+[[step on it!]]
+[[look back!->slow down]]
+]
+
+
+:: Huh? {"position":"1625,425","size":"100,100"}
+[[...->incorrect]]
+
+
+:: I said what I said. {"position":"1425,300","size":"100,100"}
+"The eagle flies at dawn."
+
+[[And the raven flies at dusk.]]
+
+[[And so the eagle soars.]]
+
+[[Huh?]]
+
+
+:: Taco Bell {"position":"100,0","size":"100,100"}
+You drive up the exit to get to Taco Bell.
+
+"Hi, welcome to Taco Bell. Can I take your order."
+
+[[yeah->order screen]]
+
+[[no->can't take order]]
+
+(set: $order to 0.00)
+
+
+:: Untitled Passage {"position":"0,0","size":"100,100"}
 if you can see this, it's working wooo :3 (this is your start node, change it to whatever u want lol)
 
-[[testinggg]]
-
-[[bee movie]]
-
-
-:: bee movie {"position":"750,450","size":"100,100"}
-according to all known laws of aviation
+[[Taco Bell]]
+[[the begin]]
 
 
-:: testinggg {"position":"550,225","size":"100,100"}
+:: baja blast {"position":"850,275","size":"100,100"}
+"Will that be all?"
 
+[[yes->your order is]]
+
+[[no->order screen]]
+
+(set: $baja is 'true')
+
+(set: $order to it +2.39)
+
+
+:: can't take order {"position":"1425,150","size":"100,100"}
+"What?"
+
+[[I said what I said.]]
+
+[[Haha, just kidding.->order screen]]
+
+
+:: continue {"position":"1150,700","size":"100,100"}
+You get out of your car and step into the opening. 
+
+Two shadowy figures stand at the entrance, ready to greet you. One is in a gaudy green tuxedo, and the other is in a matted old wizard's robe.
+
+(if: $order is not 0)[
+"I see you chose the indirect code. Are you being followed?"
+
+[[yes->followed]]
+[[no->not followed]]]
+
+(else:)[
+They beckon you forth.
+[[follow the tuxedo]]
+[[follow the wizard robe]]]
+
+
+:: correct {"position":"1150,575","size":"100,100"}
+(if: $crunchwrap is not 'true')
+["Correct."]
+
+A panel opens in the side of the Taco Bell.
+
+[[continue]]
+
+
+:: crunchwrap supreme {"position":"800,150","size":"100,100"}
+"Cool."
+
+[[that's all->your order is]]
+[[can I also get...->number nine with a twist]]
+(set: $crunchwrap is 'true')
+(set: $order to it + 4.89)
+
+
+:: don't drop it {"position":"925,700","size":"100,100"}
+You take the Baja Blast into your vehicle. The soda has melted onto your hands, gluing them to the cup. It begins spilling onto your lap, and despite how much ice the worker put in there, the liquid burns-- your flesh is searing, your essence is evaporating into the air, and before you disappear completely, you let out a singular scream.
+
+Why did you do that?
+
+[[end]]
+
+
+:: drive forward {"position":"675,1050","size":"100,100"}
+Mmm, can't wait to chow down on this grub. 
+
+
+
+[[DRIVE FORWARD]]
+
+
+:: drop it {"position":"775,750","size":"100,100"}
+"Dude, what the fawk? That's a waste."
+
+The worker climbs out of the window and starts to lap up the drink. Despite the fact the drink is melting a hole in the asphalt, it seems refreshing to them.
+
+(if: $crunchwrap is 'true')[
+"Can I get a bite of that 'wrap too?"
+
+[[sure->correct]]
+]
+[[nuh uh]]
+
+
+:: end {"position":"1825,100","size":"100,100"}
+
+
+
+:: follow the tuxedo {"position":"1100,1000","size":"100,100"}
+"Sublime choice, young one. Come this way, and I will show you the wonders of
+
+
+:: follow the wizard robe {"position":"1225,1000","size":"100,100"}
+"Good choice, young one. I shall show you the secrets of magic
+
+
+:: followed {"position":"1325,700","size":"100,100"}
+"What?!"
+
+The figures look around outside, trying not to be conspicuous. 
+
+"Get back in your car right now."
+
+
+:: incorrect {"position":"1500,550","size":"100,100"}
+"That was incorrect. You will now be terminated."
+
+[[DRIVE FORWARD]]
+
+[[DRIVE BACKWARD]]
+
+
+:: not followed {"position":"1150,800","size":"100,100"}
+"Phew."
+
+[[follow the tuxedo]] 
+[[follow the wizard robe]]
+
+
+:: notes {"position":"1375,25","size":"100,100"}
+- open panel in the side of the taco bell
+- crunchwrap
+-
+
+
+:: nuh uh {"position":"775,875","size":"100,100"}
+You need to get the hell out of here-- this is too weird for you.
+
+[[DRIVE FORWARD]]
+
+
+:: number nine with a twist {"position":"1075,350","size":"100,100"}
+(if: $crunchwrap is 'true')[
+...a number nine with a twist?
+
+]
+(set: $numbernine is 'true')
+"Twist how?"
+
+[[Bop it!->correct]]
+
+[[Pull it!->incorrect]]
+
+[[Never mind.->your order is]]
+(if: $baja is not "true")[ [[Just add a baja blast.->baja blast]] ]
+
+
+:: oh god! {"position":"1100,1225","size":"100,100"}
+The thick faux leather fumes quickly obscure your line of sight and your breathing. You fumble for the window button, but it's not working! You don't know where you're going, but you're going there fast.
+
+[[slow down]]
+[[speed up]]
+
+
+:: order screen {"position":"1175,200","size":"100,100"}
+(if: $baja is 'true')[
+Can I get a...
+
+[[crunchwrap supreme]]
+
+[[number nine with a twist]]]
+(else:)[
+Can I get a...
+
+[[crunchwrap supreme]]
+
+[[baja blast]]
+
+[[number nine with a twist]]]
+
+
+:: pull forward {"position":"700,550","size":"100,100"}
+The worker hands you your order. 
+
+(if: $baja is 'true')[Suddenly, the baja blast begins melting through the cup! 
+
+[[drop it]] 
+
+[[don't drop it]]]
+
+(else:)[
+
+[[drive forward]]
+
+]
+
+
+:: slow down {"position":"1100,1350","size":"100,100"}
+The Taco Bell employee has had their eye trained on your exact location, and this time, they don't miss.
+
+[[end]]
+
+
+:: speed up {"position":"1225,1350","size":"100,100"}
+
+
+
+:: step on it! {"position":"1475,1275","size":"100,100"}
+
+
+
+:: the begin {"position":"0,100","size":"100,100"}
+
+
+
+:: your order is {"position":"725,400","size":"100,100"}
+(if: $numbernine is 'true')[(set: $order to it + 4.78)]
+"Okay. Your total is $$order at the first window."
+
+[[pull forward]]
