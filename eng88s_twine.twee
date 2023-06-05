@@ -1,5 +1,5 @@
 :: StoryTitle
-eng88s_twine
+eng88s_twine_heartbreak R1
 
 
 :: StoryData
@@ -52,6 +52,10 @@ she narrows her eyes.
 ]
 
 
+:: Taco Bell {"position":"625,50","size":"100,100"}
+
+
+
 :: Thur-- {"position":"300,1475","size":"100,100"}
 Hi there!
 
@@ -66,14 +70,10 @@ In order to have the best experience, please allow access to your camera and mic
 
 
 :: Untitled Passage {"position":"375,50","size":"100,100"}
-this is your start node :3
+if you can see this, it's working wooo :3 (this is your start node, change it to whatever u want lol)
 
-this is how [[options]] work
-
-[[bee movie]]
-
+[[Taco Bell]]
 [[the begin]]
-
 
 
 :: a coyote {"position":"450,1375","size":"100,100"}
@@ -137,10 +137,6 @@ the storm grows louder. You've never heard a storm so loud before. It's louder t
 (live: 2s)[(stop:) it occurs to you that maybe you should [[get down]], behind something. Take cover perhaps.
 
 ]]]
-
-
-:: bee movie {"position":"675,50","size":"100,100"}
-
 
 
 :: blood {"position":"600,700","size":"100,100"}
@@ -343,10 +339,6 @@ Your wipers wouldn't do very much even if they were in a working condition
 (you can't quite remember why your wipers don't work)
 
 It'd be nice to [[get off the road]] for a bit.
-
-
-:: options {"position":"850,200","size":"100,100"}
-
 
 
 :: outside.... {"position":"150,1500","size":"100,100"}
