@@ -7,16 +7,50 @@ eng88s_twine
   "ifid": "82EA2B3F-D3E2-4F37-AE6B-879536E29B88",
   "format": "Harlowe",
   "format-version": "3.3.5",
-  "start": "Untitled Passage",
+  "start": "entrance to Denny's",
   "zoom": 1
 }
 
 
-:: Untitled Passage {"position":"625,325","size":"100,100"}
-this your new start node :3 
-
-this is how [[options]] work
+:: \ happiness {"position":"362.5,350","size":"100,100"}
 
 
-:: options {"position":"625,450","size":"100,100"}
 
+:: \ invite {"position":"175,350","size":"100,100"}
+//Says you, stranger! We haven't caught up in ages.//
+
+She's right. You rarely speak anymore, mostly because you have been avoiding her. 
+
+//Are you free now? Let's grab a bite.//
+
+She reads the message immediately. You watch the three dots bobble up and down, and it makes you nervous.
+
+//Sure. Where?//
+
+You let out a breath you didn't know you were holding.
+
+
+:: \ longing {"position":"487.5,350","size":"100,100"}
+
+
+
+:: \ text {"position":"300,475","size":"100,100"}
+
+
+
+:: bee movie {"position":"750,450","size":"100,100"}
+
+
+
+:: booth {"position":"425,225","size":"100,100"}
+The hostess sits you at the booth near the bathrooms. Rude. The view from the window is of a busy street. The cars whiz by, and people stroll along the sidewalk. A woman speaks angrily into her cell phone while dragging her crying toddler by the arm. A man and his partner walk side by side, arms linked. They walk slowly, not speaking, soft smiles on their faces. You can't place the feeling the sight of them leaves you with. Is it [[ happiness]]? Or perhaps [[ longing]]?
+
+
+:: entrance to Denny's {"position":"425,100","size":"100,100"}
+The air smells like coffee and french fries. The restaurant is nearly empty, which is odd for this time of day. The hostess stares at you with dead eyes. Someone is clearly not feeling very sunny side up. At least you have a choice of seating. Do you pick the [[booth]] or the [[table]] in the middle of the floor?
+
+
+
+
+:: table {"position":"300,225","size":"100,100"}
+The hostess sits you directly in the middle of the restaurant. There is an old man eating waffles at the table in front of you. He looks up from his plate. You smile at him. He waves you over to join him, but you point to your phone, gesturing that you're waiting for somebody. You hope he finishes his waffles before your "friend" is due to arrive. Your phone buzzes in your hand. It's Sam. Perhaps a meal with her couldn't hurt. Do you [[ invite]] her or do you just [[ text]] her back?
