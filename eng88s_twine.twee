@@ -7,15 +7,6 @@ eng88s_twine
   "ifid": "82EA2B3F-D3E2-4F37-AE6B-879536E29B88",
   "format": "Harlowe",
   "format-version": "3.3.5",
-<<<<<<< Updated upstream
-  "start": "Untitled Passage",
-  "zoom": 1
-}
-
-
-:: Untitled Passage {"position":"625,325","size":"100,100"}
-this your new start node :3 
-=======
   "start": "The Donut Shop",
   "zoom": 0.6
 }
@@ -25,24 +16,16 @@ this your new start node :3
 "But I don't understand. How can some people be //happy// in settling down, and not moving constantly to other places? How can a person possibly be happy settling down, having a family, and spending -- eternity-- with that person?"
 
 [[(maybe the possibility of settling down allows growth with that person)]]
->>>>>>> Stashed changes
 
-this is how [[options]] work
 
-<<<<<<< Updated upstream
-=======
 :: (maybe the possibility of settling down allows growth with that person) {"position":"550,1525","size":"100,100"}
 "hmm...this is true. Just like a farmer sows his seeds into the soil, and grows a tree that grows into a forest. I--"
 
 The old man's eyes widened.
 
 [[what is it?]]
->>>>>>> Stashed changes
 
-:: options {"position":"625,450","size":"100,100"}
 
-<<<<<<< Updated upstream
-=======
 
 
 :: *look inside the donut hole* {"position":"1250,1200","size":"100,100"}
@@ -314,4 +297,3 @@ I guess I like donuts for another reason..."
 
 [[what's that other reason?]]
 
->>>>>>> Stashed changes
